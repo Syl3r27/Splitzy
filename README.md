@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./public/logo.png" alt="Splitzy Logo" width="120" />
+  <img src="/public/logos/logo.png" alt="Splitzy Logo" width="120" />
 </p>
 
 <h1 align="center">Splitzy 💸</h1>
@@ -76,13 +76,10 @@ Featuring **real-time sync**, **clean UI**, **background workflows**, and **inst
 
 
 <div align="center">
-  <img src="./screenshots/dashboard.png" width="80%"/>
+  <img src="/public/logos/image.png" width="80%"/>
   <br/>
   <em>Dashboard — balances & groups</em>
   <br/><br/>
-  <img src="./screenshots/expense-modal.png" width="80%"/>
-  <br/>
-  <em>Add expense modal</em>
 </div>
 
 ---
