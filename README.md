@@ -1,36 +1,154 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center">
+  <img src="./public/splitzy-logo.png" alt="Splitzy Logo" width="120" />
+</p>
 
-## Getting Started
+<h1 align="center">Splitzy 💸</h1>
 
-First, run the development server:
+<p align="center">Real-time expense tracking with AI-powered insights — fast, beautiful, modern.</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs" />
+  <img src="https://img.shields.io/badge/Convex-4B44E3?style=for-the-badge&logo=cloudflarepages&logoColor=white" />
+  <img src="https://img.shields.io/badge/Tailwind-38BDF8?style=for-the-badge&logo=tailwindcss&logoColor=white" />
+  <img src="https://img.shields.io/badge/shadcn--ui-black?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Inngest-FF7E00?style=for-the-badge&logo=zap" />
+  <img src="https://img.shields.io/badge/Clerk-333?style=for-the-badge&logo=clerk" />
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" />
+</p>
+
+---
+
+## 🚀 Overview
+
+**Splitzy** is a modern, full-stack expense management platform designed for groups, friends, roommates, and trips.  
+Track shared expenses, split costs fairly, and understand settlements with AI-powered explanations.
+
+Featuring **real-time sync**, **clean UI**, **background workflows**, and **instant clarity** for who owes what.
+
+---
+
+## ✨ Features
+
+### 🔥 Core Functionality
+- Add shared expenses with equal or custom splits  
+- Automatic balance calculation  
+- Real-time updates using Convex  
+- Clean dashboards for groups, totals, and settlements  
+
+### 🤖 AI-Powered Insights
+- GPT-powered breakdowns of balances  
+- Human-friendly settlement suggestions  
+- Monthly or per-trip expense summaries  
+- Automatic categorization (configurable)
+
+### 🎨 Beautiful UI/UX
+- Built using **shadcn/ui** + Tailwind  
+- Smooth animations  
+- Dark mode ready  
+- Mobile-first responsive design  
+
+### 🔐 Secure Authentication
+- User accounts managed by Clerk  
+- Protected dashboards and groups  
+
+### 🧵 Background Workflows with Inngest
+- AI summaries run asynchronously  
+- Ready for reminders / digest reports  
+- More workflow automation possible  
+
+---
+
+## 🧰 Tech Stack
+
+| Layer | Technology |
+|-------|------------|
+| **Frontend** | Next.js (App Router), TypeScript, Tailwind CSS, shadcn/ui |
+| **Backend** | Convex → database + server functions |
+| **Auth** | Clerk |
+| **AI** | OpenAI / any LLM provider |
+| **Workflows** | Inngest |
+| **Styling** | Tailwind CSS + custom design system |
+
+---
+
+## 📸 Screenshots (Add later)
+
+> Replace these placeholders with your images.
+
+<div align="center">
+  <img src="./screenshots/dashboard.png" width="80%"/>
+  <br/>
+  <em>Dashboard — balances & groups</em>
+  <br/><br/>
+  <img src="./screenshots/expense-modal.png" width="80%"/>
+  <br/>
+  <em>Add expense modal</em>
+</div>
+
+---
+
+## 🛠️ Getting Started
+
+### 1️⃣ Clone the project
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+git clone https://github.com/<your-username>/splitzy.git
+cd splitzy
+2️⃣ Install dependencies
+bash
+Copy code
+pnpm install
+3️⃣ Configure environment variables
+Create a .env.local:
+
+env
+Copy code
+# Clerk
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+
+# Convex
+NEXT_PUBLIC_CONVEX_URL=
+CONVEX_DEPLOY_KEY=
+CONVEX_ADMIN_KEY=
+
+# Inngest
+INNGEST_EVENT_KEY=
+
+# AI Provider
+OPENAI_API_KEY=
+4️⃣ Start Convex
+bash
+Copy code
+npx convex dev
+5️⃣ Run the development server
+bash
+Copy code
 pnpm dev
-# or
-bun dev
-```
+Now open → http://localhost:3000
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+🗺️ Roadmap
+ Add expense export / shareable links
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+ Add notifications & reminders via Inngest
 
-## Learn More
+ More AI analytics (categories, anomalies)
 
-To learn more about Next.js, take a look at the following resources:
+ Multi-currency support
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+ PWA for offline mobile use
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+ Group chat for notes & context
 
-## Deploy on Vercel
+🤝 Contributing
+Pull requests and issues are welcome!
+Feel free to discuss ideas or propose new features.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+📝 License
+Licensed under the MIT License.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+⭐ Support
+If you like Splitzy, please ⭐ star the repo — it helps a lot!
