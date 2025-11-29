@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./public/splitzy-logo.png" alt="Splitzy Logo" width="120" />
+  <img src="./public/logo.png" alt="Splitzy Logo" width="120" />
 </p>
 
 <h1 align="center">Splitzy 💸</h1>
@@ -62,7 +62,7 @@ Featuring **real-time sync**, **clean UI**, **background workflows**, and **inst
 
 | Layer | Technology |
 |-------|------------|
-| **Frontend** | Next.js (App Router), TypeScript, Tailwind CSS, shadcn/ui |
+| **Frontend** | Next.js (App Router), JavaScript, Tailwind CSS, Shadcn/ui |
 | **Backend** | Convex → database + server functions |
 | **Auth** | Clerk |
 | **AI** | OpenAI / any LLM provider |
@@ -73,7 +73,7 @@ Featuring **real-time sync**, **clean UI**, **background workflows**, and **inst
 
 ## 📸 Screenshots (Add later)
 
-> Replace these placeholders with your images.
+
 
 <div align="center">
   <img src="./screenshots/dashboard.png" width="80%"/>
@@ -92,7 +92,7 @@ Featuring **real-time sync**, **clean UI**, **background workflows**, and **inst
 ### 1️⃣ Clone the project
 
 ```bash
-git clone https://github.com/<your-username>/splitzy.git
+git clone https://github.com/Syl3r27/Splitzy.git
 cd splitzy
 2️⃣ Install dependencies
 bash
